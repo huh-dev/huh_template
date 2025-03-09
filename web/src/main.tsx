@@ -14,6 +14,12 @@ const root = document.getElementById("root");
 
 // For development preview, render CharacterSelector directly
 if (isEnvBrowser()) {
+
+  root!.style.backgroundImage = 'url("https://i.imgur.com/3pzRj9n.png")';
+  root!.style.backgroundSize = "cover";
+  root!.style.backgroundRepeat = "no-repeat";
+  root!.style.backgroundPosition = "center";
+  
   ReactDOM.createRoot(root!).render(
     <React.StrictMode>
       <LocaleProvider>
