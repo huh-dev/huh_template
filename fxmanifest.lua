@@ -21,10 +21,12 @@ shared_scripts {
 
 client_scripts {
   'client.lua',
+  'modules/nui/client.lua',
 }
 
 server_scripts {
   'server.lua',
+  'modules/nui/server.lua',
   '@oxmysql/lib/MySQL.lua'
 }
 
