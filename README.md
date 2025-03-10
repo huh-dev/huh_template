@@ -88,4 +88,4 @@ Created by huh
 
 ## Credit
 
-Credit to orginal repo: https://github.com/SYNO-SY/Fivem-React-Mantine-Template
+Credit to original repo: https://github.com/SYNO-SY/Fivem-React-Mantine-Template
