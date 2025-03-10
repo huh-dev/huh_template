@@ -1,17 +1,14 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import { Translations } from '../types/locale';
+import type { Translations } from '../types/locale';
 import { fetchNui } from '../utils/fetchNui';
 import { isEnvBrowser } from '../utils/misc';
 
+type OptionalTranslations = Partial<Translations>;
+
 interface LocaleContextValue {
-  translations: Translations;
+  translations: OptionalTranslations;
   locale: string;
 }
-
-const defaultTranslations: Translations = {
-  ui_heading: "garage",
-  ui_back: "Back"
-};
 
 const LocaleContext = createContext<LocaleContextValue | null>(null);
 
@@ -29,7 +26,7 @@ interface LocaleProviderProps {
 
 export const LocaleProvider: React.FC<LocaleProviderProps> = ({ children }) => {
   const [locale, setLocale] = useState<string>('en');
-  const [translations, setTranslations] = useState<Translations>(defaultTranslations);
+  const [translations, setTranslations] = useState<OptionalTranslations>({});
 
   useEffect(() => {
     const getLocale = async () => {
