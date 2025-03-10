@@ -86,6 +86,6 @@ MIT License
 
 Created by huh
 
-## Support
+## Credit
 
-For support, please open an issue in the repository.
+Credit to orginal repo: https://github.com/SYNO-SY/Fivem-React-Mantine-Template
