@@ -33,10 +33,6 @@ A modern FiveM resource template that combines React and Mantine UI framework fo
    ```bash
    yarn build   # or npm run build
    ```
-4. Add the resource to your server.cfg:
-   ```
-   ensure huh_template
-   ```
 
 ## Development
 
